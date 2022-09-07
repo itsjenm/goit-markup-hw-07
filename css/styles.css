@@ -251,7 +251,7 @@ nav .current:after {
   margin-right: 10px;
 }
 
-.project__name {
+.projects__name {
   margin: 0;
   margin-bottom: 10px;
 }
@@ -355,7 +355,6 @@ li.benefits__item:not(:last-child) {
 .benefits__content .benefits__image-title {
   font-weight: 700;
   font-size: 14px;
-  background-color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -381,6 +380,7 @@ p {
   font-weight: 700;
   margin-bottom: 50px;
 }
+
 
 .team__name {
   text-align: center;
@@ -531,7 +531,7 @@ li.customers__icon-border:not(:last-child) {
   0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.image-container {
+/* .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,7 +546,7 @@ li.customers__icon-border:not(:last-child) {
 .image-container:focus {
   border: 1px solid #2196f3;
   cursor: pointer;
-}
+} */
 
 .customer-link:hover {
   background-color: #2196f3;
@@ -567,7 +567,7 @@ li.customers__icon-border:not(:last-child) {
   
 }
 
-.footer-title {
+.social-title {
   font-weight: 700;
   margin-top: 10px;
   
