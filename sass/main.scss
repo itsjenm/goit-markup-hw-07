@@ -1,2 +1,16 @@
-@import 'utils/variables.scss';
-@import 'components/header';
+//UTILS
+@import './utils/variables.scss';
+
+
+// BASE
+
+
+// COMPONENTS
+
+
+
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/feature';
+@import './layout/project'
