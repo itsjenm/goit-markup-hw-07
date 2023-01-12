@@ -98,7 +98,7 @@ nav {
   display: flex;
 }
 
-.nav {
+.nav__items {
   display: flex;
   margin-left: 100px;
   /* background-color: yellow; */

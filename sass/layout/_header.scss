@@ -1,10 +1,11 @@
-header {
+.header {
     /* use padding instead of width or height */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #ececec;
     /* background-color: aqua; */
+
 
     .container {
         width: 1200px;
@@ -13,22 +14,25 @@ header {
         padding: 0 15px;
         /* background-color: aqua; */
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
       
 
-      &__container {
-        display: flex;
-        justify-content: space-between;
-      }
+        &__container {
+          display: flex;
+          justify-content: space-between;
 
-}
+          &:hover,
+          &:focus {
+            color: $headerHoverColor;
+          }
+          
+        }
+    }
 
-
-nav {
-    /* background-color: lightcoral; */
-    align-items: center;
-     display: flex;
-
+    .navigation {
+      /* background-color: lightcoral; */
+      align-items: center;
+      display: flex;
+  
         &__link {
             padding: 32px 0 32px 0;
             color: $primaryBodyColor;
@@ -36,23 +40,63 @@ nav {
             font-weight: 500;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
           }
+          .current {
+            position: relative;
+            color: $headerHoverColor;
 
-          .nav {
+            &:after {
+              position: absolute;
+              content: "";
+              display: block;
+              width: 100%;
+              bottom: -1px;
+              border-bottom: 4px solid #2196F3;
+              border-radius: 2px;
+            }
+          }
+
+          &__link-logo {
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 26px;
+            color: black;
+            text-decoration: none;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:before {
+              content: "Web";
+              color: #2196f3;
+              font-family: "Raleway";
+              font-size: 26px;
+              font-weight: 700;
+            }
+          }
+          
+  
+          &__items {
             display: flex;
             margin-left: 100px;
             /* background-color: yellow; */
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
           }
-
-            &__item:not(:last-child) {
-                margin-right: 50px;
+  
+            &__item:not(:last-child),
+            &__contacts-item:not(:last-child) {
+              margin-right: 50px;
             }
+  
+          &__contacts {
+            display: flex;
+            align-items: center;
+            color: $primaryContactsColor;
+          }
+            .contact-icon {
+              margin-right: 10px;
+              fill: currentColor;
+            }
+            
+      }
 
-                &__contacts {
-                    display: flex;
-                    align-items: center;
-                    color: $primaryContactsColor;
-                }
-      
-  }
+}
+
 
